@@ -2,21 +2,21 @@
 
 int main (){
 
-// ESTRUTURA WHILE - MOVIMENTOS BISPO
+  // ESTRUTURA FOR - MOVIMENTOS DA TORRE 
 
-    int i = 0, numero;
+     int numero, i;
+
+    // Entrada da quantidade de movimentos da torre
+    printf("Escolha o numero de movimentos:");  
+    scanf("%d", &numero); 
+
+        
+    // Mover torre 5 casas a direita
+    for (int i = 0; i < numero; i++){ 
     
-    // Entrada da quantidade de movimentos do bispo
-
-    printf("Número de movimentos do bispo:"); 
-    scanf("%d", &numero);
-
-    while (i < numero) 
-    {
-        printf("Cima Esquerda \n",i); // imprime os movimentos do bispo
-        i++;
+        printf("Direita \n", i); // imprime o movimento da torre
     }
-    
+  
   return 0;
 
 
